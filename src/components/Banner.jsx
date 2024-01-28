@@ -13,7 +13,7 @@ const Banner = () => {
     }   
 
     return (
-        <section className="bg-zinc-900 min-h-full xl:h-screen py-28 flex justify-center items-center px-5 xl:px-0">
+        <section className="bg-zinc-900 min-h-full 2xl:h-screen py-28 flex justify-center items-center px-5 xl:px-0">
             <div className="w-[75rem] flex flex-col xl:flex-row items-center">
                 <div className="text-zinc-100 xl:w-[23rem] flex flex-col justify-center">
                     <p className="uppercase text-zinc-300">best cars marketplace</p>
@@ -29,8 +29,10 @@ const Banner = () => {
                     <p className="font-semibold text-xl flex items-center gap-2 mt-2">12k+ <span className="font-light text-sm">Good Reviews</span></p>
                 </div>
                 <div className="xl:w-[30rem] w-full mt-10 xl:mt-0">
-                    <div className="bg-zinc-300 h-[570px] w-full rounded-xl">
-
+                    <div className="bg-zinc-300 h-[570px] w-full rounded-xl overflow-hidden">
+                        <video autoPlay muted loop style={{ objectFit: 'cover', width: '100%', height: '100%' }}>
+                            <source src="images/banner-video.mp4" type="video/mp4" className=""/>
+                        </video>
                     </div>
                 </div>
                 <div className="w-full xl:w-[22rem] xl:ml-10 mt-10 xl:mt-0">
