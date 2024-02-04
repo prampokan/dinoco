@@ -18,7 +18,9 @@ const CarCard = () => {
 
   return (
     <>
-        {!cars ? "server is off" : cars.map((car)=> (
+        {cars.length === 0 ? 
+            <div className="text-zinc-600 text-2xl font-bold">Server is off...😓</div> 
+        : cars.map((car)=> (
         <div className='md:w-[24rem] bg-zinc-50 rounded-2xl p-6 shadow-sm ease-linear duration-100 hover:bg-white hover:shadow-xl' key={car.id}>
             <div className='flex justify-between items-center'>
                 <div>

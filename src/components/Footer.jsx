@@ -2,10 +2,10 @@ import FooterCard from "../fragments/FooterCard"
 
 const Footer = () => {
   return (
-    <div className='pt-20 bg-zinc-900 flex flex-col justify-center items-center'>
-      <div className='w-[75rem] flex border-b border-zinc-500 pb-20'>
+    <div className='pt-20 bg-zinc-900 flex flex-col justify-center items-center px-5 xl:px-0'>
+      <div className='w-full xl:w-[75rem] xl:flex border-b border-zinc-500 pb-20'>
         <div>
-          <img src="images/dinoco-logo.png" alt="" className='w-32'/>
+          <img src="images/dinoco-logo.png" alt="" className='w-32 mb-10 xl:mb-0'/>
         </div>
         <FooterCard 
           title="showroom"
@@ -31,11 +31,11 @@ const Footer = () => {
           text4="Privacy & Policy"
           text5="Term & Conditions"
         />
-        <div className='text-zinc-100 flex flex-col gap-4 mx-16'>
+        <div className='text-zinc-100 flex flex-col gap-4 xl:mx-16'>
           <h1 className='text-zinc-400 uppercase mb-2'>subscribe to our newsletter</h1>
           <p className="text-white text-sm">Get the latest discounts, promotions & exclusive benefits sent straight to your email</p>
           <div className="bg-white p-1 pl-4  rounded-lg flex justify-between mt-2">
-            <input type="text" placeholder="Type you email" className="text-sm outline-none text-black"/>
+            <input type="text" placeholder="Type you email" className="text-sm outline-none text-black w-full"/>
             <button className="bg-blue-500 text-sm rounded-lg py-3 px-8 font-semibold ease-linear duration-100 hover:bg-black hover:text-white">Send</button>
           </div>
           <div className="flex gap-10 text-xl mt-2">
