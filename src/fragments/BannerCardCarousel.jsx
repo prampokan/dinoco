@@ -35,7 +35,7 @@ const BannerCardCarousel = () => {
         <div className="text-zinc-200 text-2xl font-bold">Server is off...😓</div>
       : (
         <div key={cars[currentIndex].id}>
-            <div className="bg-zinc-800 h-[370px] rounded-lg border border-zinc-100 text-zinc-100 p-6">
+            <div className="bg-zinc-800 h-[370px] rounded-lg border-2 border-zinc-600 text-zinc-100 p-6">
                 <div className='flex justify-between items-start'>
                     <div>
                         <p className="font-semibold text-xl">{cars[currentIndex].brand}: {cars[currentIndex].name}</p>

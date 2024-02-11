@@ -22,7 +22,7 @@ const CarCard = () => {
             <div className="text-zinc-600 text-2xl font-bold">Server is off...😓</div> 
         : cars.map((car)=> (
         <div className='md:w-[24rem] bg-zinc-50 rounded-2xl p-6 shadow-sm ease-linear duration-100 hover:bg-white hover:shadow-xl' key={car.id}>
-            <div className='flex justify-between items-center'>
+            <div className='flex justify-between items-start'>
                 <div>
                     <p className='font-semibold text-lg text-zinc-700'>{car.brand}: {car.name}</p>
                     <p className='text-zinc-400 mt-1'>{car.type}</p>
